@@ -23,3 +23,16 @@
     console.log(Cools)
 
 }
+//TemplateLine -> TL
+{
+    /* let Nome = prompt("Seu Nome: ")
+    let estado = prompt("voce esta feliz,bem,mal,triste Digite: ")*/
+    let Nome = "Jeje";
+    let estado = "Mal e Triste"
+    //Sem TL
+    let text = ("oi"+Nome+"Tudo"+estado+"pra voce");
+    console.log(text)
+    //Com TL
+    let NewText = `oi ${Nome} Tudo ${estado} pra voce`;
+    console.log(NewText)
+}
