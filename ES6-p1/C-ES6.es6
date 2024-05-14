@@ -23,7 +23,7 @@
     console.log(Cools)
 
 }
-//TemplateLine -> TL
+//TemplateLiteral -> TL
 {
     /* let Nome = prompt("Seu Nome: ")
     let estado = prompt("voce esta feliz,bem,mal,triste Digite: ")*/
