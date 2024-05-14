@@ -23,4 +23,14 @@
         console.log(Cools)
     
 }
-//Proximo
+//TemplateLine -> TL
+{
+    let Nome = prompt("Seu Nome: ")
+    let estado = prompt("voce esta feliz,bem,mal,triste Digite: ")
+    //Sem TL
+    let text = ("oi"+Nome+"Tudo"+estado+"com voce");
+    console.log(text)
+    //Com TL
+    let NewText = ("oi ${Nome} Tudo ${estado} com voce");
+    console.log(NewText)
+}
