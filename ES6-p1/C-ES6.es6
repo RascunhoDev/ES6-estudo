@@ -35,4 +35,16 @@
     //Com TL
     let NewText = `oi ${Nome} Tudo ${estado} pra voce`;
     console.log(NewText)
+    //Sem TL -PulandoLinha
+    let Objects = "Caderno"+"\n"+"Livro"+"\n"+"Caneta"+"\n"+"Mochilça";
+    console.log(Objects)
+    //Com TL -PulandoLinha
+    let OtherOBJ = 
+                `
+                Teclado
+                Mouse
+                Controle
+                PortableComputer
+                `;
+    console.log(OtherOBJ)
 }
