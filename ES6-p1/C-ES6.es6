@@ -48,3 +48,25 @@
                 `;
     console.log(OtherOBJ)
 }
+//Metodos de String
+{
+    let CardBradesco = "3265 3756 4002 0022";
+    let CardItau = "9078 6776 4004 4828";
+
+    if (CardBradesco.endsWith("4002 0022")){
+        console.clear
+        console.log("Bradesco")
+    }
+    if (CardItau.endsWith("4004 4828")){
+        console.clear
+        console.log("Itau")
+    }
+    
+    let Nome = "Nome da silva";
+    console.log(Nome.startsWith("Nome"))
+
+    let Cavalo = "Cafe da Fonseca";
+    console.log(Cavalo.includes("da"))
+
+    console.log("Bad ".repeat(10))
+}
