@@ -70,3 +70,28 @@
 
     console.log("Bad ".repeat(10))
 }
+//Metodos Array
+{
+    //.From
+    let Nome1 = "jjj";
+    let Nome2 = ["mmm","kkk","loll"];
+
+    console.log(Array.from(Nome1));
+
+    //.of
+    console.log(Array.of("Nome1","Nome2","Nome3"));
+
+    //.find's
+    let Array1 = ["1a","2b","3c"];
+
+    console.log(Array1.find(x => x === "2b"))
+    console.log(Array1.findIndex(x => x === "2b"))
+
+    //Fill
+    let WEKUFY = new Array(10);
+    WEKUFY.fill("Capa");
+    console.log(WEKUFY)
+    Nome2.fill("111",2,2)
+    console.log(Nome2)
+
+}
