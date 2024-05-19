@@ -23,7 +23,7 @@
     console.log(Cools)
 
 }
-//TemplateLiteral -> TL
+// ▽ Abaixo TemplateLiteral -> TL
 {
     /* let Nome = prompt("Seu Nome: ")
     let estado = prompt("voce esta feliz,bem,mal,triste Digite: ")*/
@@ -48,7 +48,7 @@
                 `;
     console.log(OtherOBJ)
 }
-//Metodos de String
+// ▽ Abaixo Metodos de String
 {
     let CardBradesco = "3265 3756 4002 0022";
     let CardItau = "9078 6776 4004 4828";
@@ -70,7 +70,7 @@
 
     console.log("Bad ".repeat(10))
 }
-//Metodos Array
+// ▽ Abaixo Metodos Array
 {
     //.From
     let Nome1 = "jjj";
@@ -94,4 +94,25 @@
     Nome2.fill("111",2,2)
     console.log(Nome2)
 
+}
+// ▽ Abaixo Destructing
+{
+    const BaseObg = {
+        nome: "Hilda",
+        idade: "8 anos",
+        tamanho: "1,30",
+        sociais: {
+            facebook: "HildaDaNetflix",
+            youtube: "@OrgNetflixHilda"
+        }
+    }
+    let {nome: name,idade: age} = BaseObg;
+    let {tamanho} = BaseObg;
+    let {youtube,facebook: FB} = BaseObg.sociais;
+
+    console.log(name);
+    console.log(age);
+    console.log(tamanho);
+    console.log(youtube);
+    console.log(FB);
 }
