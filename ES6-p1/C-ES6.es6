@@ -116,3 +116,12 @@
     console.log(youtube);
     console.log(FB);
 }
+// ▽ Abaixo Swap
+{
+    let EQ1 = ["jone","jane","jafe"];
+    let EQ2 = ["caio","casio","califa"];
+    let EQT = [...EQ1,"Kaio",...EQ2];
+
+    console.log(...EQ1);
+    console.log(EQT)
+}
