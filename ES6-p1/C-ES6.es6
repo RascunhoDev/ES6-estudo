@@ -137,3 +137,26 @@
 
 
 }
+// ▽ Abaixo Promises
+{
+    let Promesa = new Promise((resolve,reject) =>{
+        if (false){
+            resolve("Bom dia!")
+        } else{
+            reject("(...bom dia...)")
+        }
+    }
+    );
+    Promesa
+        .then((Fala) => {
+            console.log(Fala)
+            return "Entra ,Vamos"
+        })
+        .catch((Silencio) => {
+            console.log(Silencio)
+            return "(..entra em casa logo...)"
+        })
+        .then((Fala) => console.log(Fala))
+        .catch((Silencio) => console.log(Silencio))
+
+}
