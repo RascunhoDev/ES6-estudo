@@ -116,7 +116,7 @@
     console.log(youtube);
     console.log(FB);
 }
-// ▽ Abaixo Swap
+// ▽ Abaixo Swap e Reset Parmals
 {
     let EQ1 = ["jone","jane","jafe"];
     let EQ2 = ["caio","casio","califa"];
@@ -124,4 +124,16 @@
 
     console.log(...EQ1);
     console.log(EQT)
+
+    //▽ Abaixo Reset Parmals
+    function Mult(mult,...Args) {
+        return Args.map(arg => arg * mult)
+    }
+    let Resu = Mult(4,2,4,6,8);
+    let Crach = Resu.map(resus => `\n`+"O Resultado e : " + resus);
+    console.log(...Crach)
+
+
+
+
 }
