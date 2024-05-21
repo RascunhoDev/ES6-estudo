@@ -158,5 +158,53 @@
         })
         .then((Fala) => console.log(Fala))
         .catch((Silencio) => console.log(Silencio))
+    // Mais de uma promicese
+    let Promise2 = new Promise((resolve,reject) => {
+        if(true){
+            return resolve(console.log("3"))
+        }
+        else{
+            return reject(console.log("4"))
+        }
+    })
+    let Promise1 = new Promise((resolve,reject) => {
+        setTimeout(() => {
+            if(false){
+                resolve(console.log("1"))
+            }
+            else{
+                return reject(console.log("2"))
+            }
+        }, 1000);
+    })
+    // .RACE
+    Promise
+        .race([Promise1,Promise2])
+        .then((Soma) => console.log(Soma))    
+    // . ALL()
+    Promise
+        .all([Promise1,Promise2])
+        .then((Soma) => console.log(Soma))
+        .catch((Subitracao) => console.log(Subitracao))
+}
+// ▽ Abaixo Prototipal - NAO FUNCIO NO
+{
+    /** 
+        function Jorney(Name,MaxSpeed,Distance) {
+        this.MaxSpeed = MaxSpeed;
+        this.Distance = Distance;
+        this.Name = Name;
+    }
+    Jorney.prototype.VM = function(){
+        let VMR = (MaxSpeed / Distance)
+        console.log(Name + "Tem a Velocidade Media na viagem de : "+VMR)
+    }
+    const Uno = new Jorney("Uno",80,160)
+    const Skyline = new Jorney("Skyline",100,300)
 
+    console.log(Uno.Name)
+    console.log(Uno.MaxSpeed)
+    console.log(Uno.Distance)
+    console.log(Uno.VM)
+    */
 }
