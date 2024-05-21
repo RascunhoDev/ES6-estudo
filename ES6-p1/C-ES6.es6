@@ -187,24 +187,56 @@
         .then((Soma) => console.log(Soma))
         .catch((Subitracao) => console.log(Subitracao))
 }
-// ▽ Abaixo Prototipal - NAO FUNCIO NO
+// ▽ Abaixo Prototipal -NAO FUNCIONOU MAS ESTA CORRETO NA ESCRITA
 {
     /** 
         function Jorney(Name,MaxSpeed,Distance) {
-        this.MaxSpeed = MaxSpeed;
-        this.Distance = Distance;
-        this.Name = Name;
-    }
-    Jorney.prototype.VM = function(){
-        let VMR = (MaxSpeed / Distance)
-        console.log(Name + "Tem a Velocidade Media na viagem de : "+VMR)
-    }
-    const Uno = new Jorney("Uno",80,160)
-    const Skyline = new Jorney("Skyline",100,300)
+            this.MaxSpeed = MaxSpeed;
+            this.Distance = Distance;
+            this.Name = Name;
+        }
+        Jorney.prototype.VM = function(){
+            let VMR = (MaxSpeed / Distance)
+            return console.log(Name + "Tem a Velocidade Media na viagem de : "+VMR)
+        }
+        const Uno = new Jorney("Uno",80,160)
+        const Skyline = new Jorney("Skyline",100,300)
 
-    console.log(Uno.Name)
-    console.log(Uno.MaxSpeed)
-    console.log(Uno.Distance)
-    console.log(Uno.VM)
+        console.log("SEU NOME: "+Uno.Name)
+        console.log("SUA SPEED: "+Uno.MaxSpeed)
+        console.log("SEU CMINHO: "+Uno.Distance)
+        console.log(Uno.VM)
     */
+}
+// ▽ Abaixo Classes -NAO FUNCIONOU MAS ESTA CORRETO NA ESCRITA
+{
+    /**
+     class MakeCar {
+        constructor(Nome,VMax,Chape){
+            this.Nome = Nome;
+            this.VMax = VMax;
+            this.Chape = Chape;
+        }
+        Buzina(){
+            return console.log("Biiiiiiiiiiiiii")
+        }
+        static Info(){
+            console.log("Isso uma fabrica de carros")
+        }
+        set SetApelido(Apelido){
+            this.Apelido = Apelido;
+        }
+        get Hello(){
+            console.log("Hello")
+        }
+    }
+
+    const LadezaXD7 = new MakeCar("LadezaXD7",120,"Moderno");
+
+    */
+
+} 
+// ▽ Abaixo 
+{
+    
 }
