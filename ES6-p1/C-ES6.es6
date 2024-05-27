@@ -236,7 +236,18 @@
     */
 
 } 
-// ▽ Abaixo 
+// ▽ Abaixo For of (Iterators)
 {
-    
+    var city = "Joinvile";
+    var IT = city[Symbol.iterator]();
+
+    console.log(IT.next())
+
+    var num = [1,2,3,4,5,6,7,8,9,10];
+    var IT_two = num[Symbol.iterator](); 
+
+    for (number of IT_two){
+        console.log(number)
+        if (number == 5){break}
+    }
 }
