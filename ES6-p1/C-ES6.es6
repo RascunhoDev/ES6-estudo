@@ -246,8 +246,23 @@
     var num = [1,2,3,4,5,6,7,8,9,10];
     var IT_two = num[Symbol.iterator](); 
 
-    for (number of IT_two){
-        console.log(number)
-        if (number == 5){break}
+    for (numbe of IT_two){
+        console.log(numbe)
+        if (numbe == 5){break}
     }
+    //GENERATORS
+    function* Cars(Um,Dois,Tres){
+        yield console.log(Um)
+        yield console.log(Dois)
+        yield console.log(Tres)  
+    }
+    var JDM = Cars("RX 7","Skyline","GTR")
+
+    JDM.next()
+    JDM.next()
+    JDM.next()
+}
+// ▽ Abaixo 
+{
+
 }
