@@ -230,12 +230,46 @@
             console.log("Hello")
         }
     }
-
+    
     const LadezaXD7 = new MakeCar("LadezaXD7",120,"Moderno");
-
+    
     */
-
+   
 } 
+// ▽ Abaixo Proxy -NAO FUNCIONOU MAS ESTA CORRETO NA ESCRITA
+/**
+ {
+    const Person = {
+        name: "Carlinhos",
+        Tipo: "Sigma",
+        Localidade: "Bahia"
+    }
+    let Topixy = new Proxy(Person,
+        {
+            get(target,name){
+                console.log(name)
+            }
+        },
+        {
+            set(target,Tipo,Value){
+                console.log("VC QUER MUDAR >:(")
+                target[Tipo] = "BETA"
+            }
+        },
+        {
+            get(target,Tipo){
+                if (Tipo == "Sigma")
+                    console.log(Tipo + " isso ai meu fi :3")
+                else{
+                    console.log(Tipo + " Nao Trata de fazer Milwin >:(")
+                }
+            }
+        }
+
+    )
+    console.log(Topixy.Tipo)
+}
+ */
 // ▽ Abaixo For of (Iterators)
 {
     var city = "Joinvile";
@@ -261,8 +295,4 @@
     JDM.next()
     JDM.next()
     JDM.next()
-}
-// ▽ Abaixo 
-{
-
 }
