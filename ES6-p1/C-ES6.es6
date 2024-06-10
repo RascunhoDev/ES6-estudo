@@ -237,8 +237,8 @@
    
 } 
 // ▽ Abaixo Proxy -NAO FUNCIONOU MAS ESTA CORRETO NA ESCRITA
-/**
  {
+    /**
     const Person = {
         name: "Carlinhos",
         Tipo: "Sigma",
@@ -268,8 +268,8 @@
 
     )
     console.log(Topixy.Tipo)
+     */
 }
- */
 // ▽ Abaixo For of (Iterators)
 {
     var city = "Joinvile";
@@ -295,4 +295,21 @@
     JDM.next()
     JDM.next()
     JDM.next()
+}
+// ▽ Abaixo Set()
+{
+    let Players = new Set(["Cristiano","Messi","Kene","Son"]);
+    console.log(Players)
+    Players.add("Halland")
+    Players.delete("Cristiano")
+    console.log(Players)
+    console.log(Players.has("Son"))
+    let Soceers = Players.values();
+    for (Names of Soceers){
+        console.log(Names)
+    };
+}
+// ▽ Abaixo ------
+{
+
 }
