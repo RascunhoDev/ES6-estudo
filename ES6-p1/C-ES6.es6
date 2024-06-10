@@ -296,7 +296,7 @@
     JDM.next()
     JDM.next()
 }
-// ▽ Abaixo Set()
+// ▽ Abaixo Set() & WeakSet()
 {
     let Players = new Set(["Cristiano","Messi","Kene","Son"]);
     console.log(Players)
@@ -308,8 +308,46 @@
     for (Names of Soceers){
         console.log(Names)
     };
+    // ----------------------------
+    const CLTjulio = {
+        nome: "julio",
+        idade: "33",
+        Filhos: "12",
+        Trabalho: "Caxista do MDP BBS"
+    }
+    const CLTcarlos = {
+        nome: "carlos",
+        idade: "17",
+        Filhos: "2",
+        Trabalho: "Vendedor de PicoleS"
+    }
+    let WSdosCLT = new WeakSet([CLTcarlos,CLTjulio]);
+    console.log(WSdosCLT); //Warning
 }
-// ▽ Abaixo ------
+// ▽ Abaixo WeakMap & MAP
 {
-
+    let NPL = new Map();
+    NPL.set( 1,"A" )
+    NPL.set( 2,"B" )
+    NPL.set( 3,"C")
+    console.log(NPL)
+    console.log(NPL.keys())
+    for (L of NPL.values()){
+        console.log(L)
+    };
+    // ----------------------------
+    const CORE = {
+        nome: "?????",
+        idade: "33",
+        Conteudo: "FNAF e Jogos de Terror"
+    }
+    const PAI_TROLL = {
+        nome: "guilherme adorno",
+        idade: "??",
+        Conteudo: "Super Mario e outros Games"
+    }
+    let WSdosYT = new WeakMap();
+    WSdosYT.set(CORE,"infos do core")
+    WSdosYT.set(PAI_TROLL,"infos do Pitro")
+    console.log(WSdosYT); //Warning
 }
