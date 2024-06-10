@@ -351,3 +351,14 @@
     WSdosYT.set(PAI_TROLL,"infos do Pitro")
     console.log(WSdosYT); //Warning
 }
+// ▽ Abaixo PadStart & PapEnd (▽ ES6+)
+{
+    //ES7
+    console.log("you".padEnd(5,"hi")) // 3 => you 2 => hi
+    console.log("abc".padStart(5,"effe")) // 3 => abc 2 => ef Faltou 2 => fe
+
+}
+// ▽ --- (▽ ES6+)
+{
+    
+}
