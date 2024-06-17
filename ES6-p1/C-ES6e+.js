@@ -358,7 +358,43 @@
     console.log("abc".padStart(5,"effe")) // 3 => abc 2 => ef Faltou 2 => fe
 
 }
-// ▽ --- (▽ ES6+)
+// ▽ Async / Await (▽ ES6+) 
 {
+    //ES7
+    async function COMMITS(){
+        try{
+            var commitsLog = await fetch("https://github.com/RascunhoDev/ES6-estudo/commits/master");
+            const Data = await commitsLog.json();
+
+            return console.log(Data)
+        }
+        catch(err){
+            return console.error("Se e um Merda o seu erro aqui => ",err)
+        }
+    };
+    async function UserGitHub(){
+        var User1 = fetch('https://api.github.com/willianjusten').then(u1 => u1.json())
+        var User2 = fetch('https://api.github.com/guilouro').then(u2 => u2.json())
     
+        const Users = await Promise.all(User1,User2);
+        console.log(Users)
+    }
+    COMMITS();
+    UserGitHub();
+   //ERROR q nao esta no video :( nao consegui resolver
+}
+// ▽ array.includes & mais(▽ ES6+) 
+{
+    var OBJ = ["caneta","galinha","boneca"];
+    console.log(OBJ.includes("boneca"));
+
+    var Fruits = {
+        UVA: 2,
+        LARANJA: 5,
+        MAÇA: 15
+    }
+    var FruitsMap = new Map(Object.entries(Fruits))
+    console.log("Temos "+FruitsMap.size+" Diferentes para compra")
+
+    console.log("TEMOS NO TOTAL: ",Object.values(Fruits).reduce((a,b) => a+b))
 }
